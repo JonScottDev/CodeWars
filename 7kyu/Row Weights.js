@@ -27,3 +27,8 @@
 // ALL translations are welcomed
 // Enjoy Learning !!
 // Zizou
+
+function rowWeights(array){
+    return [array.filter( (val, i) => i % 2 == 0).reduce( (acc, c) => acc += c, 0), 
+           array.filter( (val, i) => i % 2 != 0).reduce( (acc, c) => acc += c, 0)]
+  }
