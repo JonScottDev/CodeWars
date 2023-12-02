@@ -8,11 +8,5 @@
 // ([6, -25, 3, 7, 5, 5, 7, -3, 23], 1) => [6]
 
 function evenNumbers(array, number) {
-    let newArr = []
-    for( i = 0; i < array.length; i++ ){
-      if( array[i] % 2 == 0 ) {
-        newArr.push(array[i])
-      } 
-    }
-    return newArr.slice(-number)
+    return array.filter( num => num % 2 == 0 ).slice(-number)
 }
